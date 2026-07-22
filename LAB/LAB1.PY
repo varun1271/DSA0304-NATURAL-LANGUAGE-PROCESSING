@@ -1,12 +1,11 @@
 import re
 
-text = "My phone number is 9876543210"
-
-pattern = r"\d{10}"   
+text = input("Enter a text: ")
+pattern = input("Enter pattern to search: ")
 
 match = re.search(pattern, text)
 
 if match:
-    print("Phone Number Found:", match.group())
+    print("Pattern Found")
 else:
-    print("Phone Number Not Found")
+    print("Pattern Not Found")
